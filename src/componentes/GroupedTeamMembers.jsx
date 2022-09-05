@@ -52,9 +52,10 @@ const GroupedTeamMembers = ({employees, selectedTeam, setSelectedTeam}) => {
                             <div id={"collapse_" + item.team} className={item.collapsed === true ? "collapse" : ""}>
                                 <hr />
                                 {
-                                    item.members.map( member => {
+                                    item.members.map( (member, index) => {
                                         return (
-                                            <div className='mt-2'>
+                                            <div key={index} className='mt-2'>
+                                                
                                                 <h5 className='card-title mt-2'>
                                                     <span className='text-dark'>Full Name: {member.fullName}</span>
                                                 </h5>
