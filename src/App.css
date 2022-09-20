@@ -8,11 +8,19 @@ body{
 }
 
 .standout{
-    border: 3px solid black;
+    border: 4px solid rgb(9, 122, 220);
 }
 
 h1,h2,h3,h4,h5,p{
     text-align: center;
+}
+
+.card-body{
+    background-color: #ddd;
+}
+
+li{
+    color: rgb(9, 122, 220);
 }
 
 @media only screen and (max-width: 600px){ 

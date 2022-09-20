@@ -108,7 +108,6 @@ function App() {
   }, [selectedTeam])
 
   function handleTeamSelectionChange(event) {
-    console.log(event.target.value)
     setSelectedTeam(event.target.value)
   };
 
